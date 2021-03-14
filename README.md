@@ -134,8 +134,10 @@ while (topRight < lengthRight) {
 
 Para comparar os dois algoritmos de ordenação foram utilizadas as instâncias de quantidade de elementos de 5, 10, 20, 40, 80, 160, 320, 640, 1280 e 2560 elementos do tipo inteiro. Além disso, dividiu-se em dois casos de testes, um com elementos já ordenados e outros com elementos não ordenados e mediu-se o tempo de execução desses testes em nanosegundos no algoritmo, mas no Google Sheets converteu-se para mile segundos para ajudar na elaboração do gráfico.
 
-![Quicksort%20vs%20Mergesort%2066f29d3d76e0491e90903251a7e40cc5/Quicksort_e_Mergesort_com_Nmeros_Ordenados.svg](Quicksort%20vs%20Mergesort%2066f29d3d76e0491e90903251a7e40cc5/Quicksort_e_Mergesort_com_Nmeros_Ordenados.svg)
+![Quicksort e Mergesort com Números Ordenados](https://user-images.githubusercontent.com/38151364/111086704-68371f00-84fc-11eb-97bf-16b98731c535.png)
 
 Imagem 1: gráfico comparativo do Quicksort em relação ao Mergesort
 
-![Quicksort%20vs%20Mergesort%2066f29d3d76e0491e90903251a7e40cc5/Quicksort_e_Mergesort_com_Nmeros_no_Ordenados.svg](Quicksort%20vs%20Mergesort%2066f29d3d76e0491e90903251a7e40cc5/Quicksort_e_Mergesort_com_Nmeros_no_Ordenados.svg)
+![Quicksort e Mergesort com Números não Ordenados](https://user-images.githubusercontent.com/38151364/111086710-77b66800-84fc-11eb-9337-6aa5d30489dc.png)
+
+Imagem 2: gráfico comparativo do Quicksort em relação ao Mergesort
