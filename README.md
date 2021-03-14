@@ -8,8 +8,7 @@ DIM0119 - ESTRUTURA DE DADOS BÁSICAS I - T02 (2020.2)
 
 Docente: Guilherme Fernandes de Araujo
 
-Alunos: Frank Laércio da Costa Santos Júnior <br />
-        Ohanna de Macena Dezidério
+Alunos: Frank Laércio da Costa Santos Júnior e Ohanna de Macena Dezidério
 
 ## Resumo
 
