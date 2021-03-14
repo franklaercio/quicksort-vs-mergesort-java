@@ -20,7 +20,9 @@ public class Main {
 
             Quicksort.sorterNumbers(orderNumbers);
 
-            System.out.print(Duration.between(startTimeQuicksort, Instant.now()).toNanos() + " ns for ");
+            Instant endTimeQuicksort = Instant.now();
+
+            System.out.print(Duration.between(startTimeQuicksort, endTimeQuicksort).toNanos() + " ns for ");
             System.out.print(instances[i] + " numbers\n");
         }
 
@@ -33,7 +35,39 @@ public class Main {
 
             Quicksort.sorterNumbers(orderNumbers);
 
-            System.out.print(Duration.between(startTimeQuicksort, Instant.now()).toNanos() + " ns for ");
+            Instant endTimeQuicksort = Instant.now();
+
+            System.out.print(Duration.between(startTimeQuicksort, endTimeQuicksort).toNanos() + " ns for ");
+            System.out.print(instances[i] + " numbers\n");
+        }
+
+        System.out.println("\nMergesort for sorting numbers:");
+
+        for (int i = 0; i < instances.length; i++) {
+            int[] orderNumbers = sortedNumbers(instances[i]);
+
+            Instant startTimeQuicksort = Instant.now();
+
+            Mergesort.sorterNumbers(orderNumbers);
+
+            Instant endTimeQuicksort = Instant.now();
+
+            System.out.print(Duration.between(startTimeQuicksort, endTimeQuicksort).toNanos() + " ns for ");
+            System.out.print(instances[i] + " numbers\n");
+        }
+
+        System.out.println("\nMergesort for random numbers:");
+
+        for (int i = 0; i < instances.length; i++) {
+            int[] orderNumbers = randomNumbers(instances[i]);
+
+            Instant startTimeQuicksort = Instant.now();
+
+            Mergesort.sorterNumbers(orderNumbers);
+
+            Instant endTimeQuicksort = Instant.now();
+
+            System.out.print(Duration.between(startTimeQuicksort, endTimeQuicksort).toNanos() + " ns for ");
             System.out.print(instances[i] + " numbers\n");
         }
     }
