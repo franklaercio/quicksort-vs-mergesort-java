@@ -1,6 +1,8 @@
+package main;
+
 /** Entity responsible for sorting numbers
  *
- * This algorithm is Quicksort, was created in 1960 by C.A.R. Hoare.
+ * This algorithm is main.Quicksort, was created in 1960 by C.A.R. Hoare.
  * In this case used one pivot for compare numbers.
  * Once the pivot is defined, it is possible to know who the elements are smaller than him and bigger than him.
  * Its complexity in the worst case is C(n) = O(n^2)
@@ -11,7 +13,7 @@
  */
 public class Quicksort {
 
-    /** Function public for use Quicksort
+    /** Function public for use main.Quicksort
      *
      * @param numbers
      */

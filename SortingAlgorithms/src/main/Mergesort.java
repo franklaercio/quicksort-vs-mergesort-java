@@ -1,6 +1,8 @@
+package main;
+
 /** Entity responsible for sorting numbers
  *
- * This algorithm is Mergesort, was created in 1945 by John von Neumann.
+ * This algorithm is main.Mergesort, was created in 1945 by John von Neumann.
  * In this case used middle position and separates into smaller vectors.
  * Once the middle is defined, the mergesort algorithm is called recursively and joins the lists.
  * Its complexity in the worst case is C(n) = O(n^2)
@@ -11,7 +13,7 @@
  */
 public class Mergesort {
 
-    /** Function public for use Mergesort
+    /** Function public for use main.Mergesort
      *
      * @param numbers
      */

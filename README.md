@@ -1,4 +1,4 @@
-# Quicksort vs Mergesort
+# main.Quicksort vs main.MergesortTest
 
 Universidade Federal do Rio Grande do Norte
 
@@ -12,9 +12,9 @@ Alunos: Frank Laércio da Costa Santos Júnior e Ohanna de Macena Dezidério
 
 ## Resumo
 
-Este trabalho irá comparar dois algoritmos de ordenação, o Quicksort e o Mergesort. Eles partem da mesma estratégia de dividir para conquistar e possuem a mesma complexidade no melhor e pior caso. Sendo no melhor caso O (n log n) e no pior caso O (n²). Para realizar as análises os algoritmos foram implementados na linguagem Java e os gráficos foram gerados no Google Sheets.
+Este trabalho irá comparar dois algoritmos de ordenação, o main.Quicksort e o main.MergesortTest. Eles partem da mesma estratégia de dividir para conquistar e possuem a mesma complexidade no melhor e pior caso. Sendo no melhor caso O (n log n) e no pior caso O (n²). Para realizar as análises os algoritmos foram implementados na linguagem Java e os gráficos foram gerados no Google Sheets.
 
-## Quicksort
+## main.Quicksort
 
 Esse algoritmo foi criado em 1960 por C.A.R Hoare. Ele baseia-se em um usar um número como pivô para realizar as comparações e separar em duas listas de elementos, uma com os elementos menores que o pivô e outra com os elementos maiores que o pivô.
 
@@ -59,7 +59,7 @@ private static void swap(int[] numbers, int start, int end) {
 
 Nesse pseudocódigo é possível identificar que o pivô é definido como o último elemento e que a troca é feita sempre que um elemento for menor que o pivô e antes de ter um retorno é feito a troca do último número. Além disso, no final é retornado o meu próximo pivô, sendo o último elemento que foi percorrido nessa lista.
 
-## Mergesort
+## main.MergesortTest
 
 Esse algoritmo foi criado em 1945 por John van Neumann. Ele baseia-se na estratégia de definir o elemento do meio da lista e assim ir separando em listas cada vez menores até que chegue em uma de tamanho 1. Após isso, é feita uma comparação com os elementos a esquerda e a direita dessas listas, verificando se o elemento menor ou maior.
 
@@ -78,9 +78,9 @@ private static void mergeSort(int[] numbers, int start, int end) {
 }
 ```
 
-No pseudocódigo acima é possível verificar a condição de parada do algoritmo recursivo que é se o elemento de início é maior ou igual ao elemento final. Além disso, nessa parte é definido o elemento do meio que é o do início mais a média do final e início. Da mesma forma que ocorre no Quicksorte no Mergesort também é feita a chamada recursiva passando os elementos do início até uma determinada posição e dessa posição até o final. No final é feito o merge dessa chamada recursiva até que toda lista seja ordenada.
+No pseudocódigo acima é possível verificar a condição de parada do algoritmo recursivo que é se o elemento de início é maior ou igual ao elemento final. Além disso, nessa parte é definido o elemento do meio que é o do início mais a média do final e início. Da mesma forma que ocorre no Quicksorte no main.MergesortTest também é feita a chamada recursiva passando os elementos do início até uma determinada posição e dessa posição até o final. No final é feito o merge dessa chamada recursiva até que toda lista seja ordenada.
 
-Como a parte do merge no Mergesort é um pouco mais complexa de ser entendida iremos dividir ela em 3 partes. A primeira é a parte que definimos o tamanho dos elementos da esquerda e o tamanho dos elementos da direita e inserimos nesses vetores, respectivamente do início até antes do meio e do meio até o final.
+Como a parte do merge no main.MergesortTest é um pouco mais complexa de ser entendida iremos dividir ela em 3 partes. A primeira é a parte que definimos o tamanho dos elementos da esquerda e o tamanho dos elementos da direita e inserimos nesses vetores, respectivamente do início até antes do meio e do meio até o final.
 
 ```java
 int lengthLeft = middle - start + 1;
@@ -129,14 +129,14 @@ while (topRight < lengthRight) {
 }
 ```
 
-## Quicksort vs Mergesort
+## main.Quicksort vs main.MergesortTest
 
 Para comparar os dois algoritmos de ordenação foram utilizadas as instâncias de quantidade de elementos de 5, 10, 20, 40, 80, 160, 320, 640, 1280 e 2560 elementos do tipo inteiro. Além disso, dividiu-se em dois casos de testes, um com elementos já ordenados e outros com elementos não ordenados e mediu-se o tempo de execução desses testes em nanosegundos no algoritmo, mas no Google Sheets converteu-se para mile segundos para ajudar na elaboração do gráfico.
 
-![Quicksort e Mergesort com Números Ordenados](https://user-images.githubusercontent.com/38151364/111086704-68371f00-84fc-11eb-97bf-16b98731c535.png)
+![main.Quicksort e main.MergesortTest com Números Ordenados](https://user-images.githubusercontent.com/38151364/111086704-68371f00-84fc-11eb-97bf-16b98731c535.png)
 
-Imagem 1: gráfico comparativo do Quicksort em relação ao Mergesort
+Imagem 1: gráfico comparativo do main.Quicksort em relação ao main.MergesortTest
 
-![Quicksort e Mergesort com Números não Ordenados](https://user-images.githubusercontent.com/38151364/111086710-77b66800-84fc-11eb-9337-6aa5d30489dc.png)
+![main.Quicksort e main.MergesortTest com Números não Ordenados](https://user-images.githubusercontent.com/38151364/111086710-77b66800-84fc-11eb-9337-6aa5d30489dc.png)
 
-Imagem 2: gráfico comparativo do Quicksort em relação ao Mergesort
+Imagem 2: gráfico comparativo do main.Quicksort em relação ao main.MergesortTest

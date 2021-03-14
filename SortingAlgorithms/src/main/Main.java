@@ -1,3 +1,5 @@
+package main;
+
 import java.time.Duration;
 import java.time.Instant;
 import java.util.Random;
@@ -11,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
         int[] instances = {5, 10, 20, 40, 80, 160, 320, 640, 1280, 2560};
 
-        System.out.println("Quicksort for sorting numbers:");
+        System.out.println("main.Quicksort for sorting numbers:");
 
         for (int i = 0; i < instances.length; i++) {
             int[] orderNumbers = sortedNumbers(instances[i]);
@@ -26,7 +28,7 @@ public class Main {
             System.out.print(instances[i] + " numbers\n");
         }
 
-        System.out.println("\nQuicksort for random numbers:");
+        System.out.println("\nmain.Quicksort for random numbers:");
 
         for (int i = 0; i < instances.length; i++) {
             int[] orderNumbers = randomNumbers(instances[i]);
@@ -41,7 +43,7 @@ public class Main {
             System.out.print(instances[i] + " numbers\n");
         }
 
-        System.out.println("\nMergesort for sorting numbers:");
+        System.out.println("\nmain.Mergesort for sorting numbers:");
 
         for (int i = 0; i < instances.length; i++) {
             int[] orderNumbers = sortedNumbers(instances[i]);
@@ -56,7 +58,7 @@ public class Main {
             System.out.print(instances[i] + " numbers\n");
         }
 
-        System.out.println("\nMergesort for random numbers:");
+        System.out.println("\nmain.Mergesort for random numbers:");
 
         for (int i = 0; i < instances.length; i++) {
             int[] orderNumbers = randomNumbers(instances[i]);
